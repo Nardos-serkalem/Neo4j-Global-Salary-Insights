@@ -1,3 +1,7 @@
+
+// ================ Querying For Nodes ================== //
+MATCH (n) RETURN n
+
 // Find countries with the same average salary
 MATCH (c1:Country)-[:HAS_AVERAGE_SALARY]->(s1:Average_Salary),
       (c2:Country)-[:HAS_AVERAGE_SALARY]->(s2:Average_Salary)
