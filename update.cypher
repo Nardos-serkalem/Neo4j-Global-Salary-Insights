@@ -3,7 +3,6 @@ MATCH (c:Country {name: "USA"})-[:HAS_AVERAGE_SALARY]->(s:Average_Salary)
 SET s.amount = 70000
 RETURN c.name AS Country, s.amount AS Average_Salary;
 
-// Update the average salary of Germany
 MATCH (c:Country {name: "Germany"})-[:HAS_AVERAGE_SALARY]->(s:Average_Salary)
 SET s.amount = 55000
 RETURN c.name AS Country, s.amount AS Average_Salary;
